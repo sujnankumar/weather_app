@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="weather-card">
+            <h1>Put City Get Weather</h1>
+            <h3 class="app-title">Weather Forecast</h3>
+
+            <div class="search-box">
+                <input type="text" id="city-input" placeholder="Enter city name..." autocomplete="off">
+                <button id="city-input-btn">Get</button>
+            </div>
+
+            <div id="weather-info" class="animate__animated">
+                <h2 id="city-name"></h2>
+                <p id="date"></p>
+                
+                <div class="weather-main">
+                    <img id="weather-icon" src="" alt="Weather Condition">
+                    <div id="temperature"></div>
+                    <div id="description"></div>
+                </div>
+
+                <div class="weather-details">
+                    <p id="wind-speed"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
